@@ -1,0 +1,15 @@
+org.apache.commons.fileupload.servlet.ServletFileUploadTest
+org.apache.commons.fileupload.util.mime.QuotedPrintableDecoderTestCase
+org.apache.commons.fileupload.util.mime.MimeUtilityTestCase
+org.apache.commons.fileupload.util.mime.Base64DecoderTestCase
+org.apache.commons.fileupload.MultipartStreamTest
+org.apache.commons.fileupload.DiskFileItemSerializeTest
+org.apache.commons.fileupload.FileItemHeadersTest
+org.apache.commons.fileupload.StreamingTest
+org.apache.commons.fileupload.ParameterParserTest
+org.apache.commons.fileupload.ProgressListenerTest
+org.apache.commons.fileupload.SizesTest
+org.apache.commons.fileupload.portlet.PortletFileUploadTest
+org.apache.commons.fileupload.FileUploadTest
+org.apache.commons.fileupload.DefaultFileItemTest
+org.apache.commons.fileupload.DiskFileUploadTest

@@ -1,0 +1,5 @@
+liquibase.ext.OpenmrsMySQLTypeConverter liquibase.database.structure.type.DataType
+liquibase.ext.OpenmrsMySQLTypeConverter liquibase.database.structure.type.ClobType
+liquibase.ext.OpenmrsMySQLTypeConverter java.lang.Boolean
+liquibase.ext.OpenmrsMySQLTypeConverter java.lang.String
+liquibase.ext.OpenmrsMySQLTypeConverter liquibase.database.typeconversion.core.MySQLTypeConverter
