@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.openmrs.hl7.HL7ServiceTest
+-------------------------------------------------------------------------------
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.531 sec - in org.openmrs.hl7.HL7ServiceTest

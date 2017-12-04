@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.openmrs.api.db.hibernate.HibernatePersonDAOTest
+-------------------------------------------------------------------------------
+Tests run: 41, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.589 sec - in org.openmrs.api.db.hibernate.HibernatePersonDAOTest

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.openmrs.api.UserServiceTest" time="3.153" tests="93" errors="0" skipped="1" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.151-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="STARTS_EXCLUDES" value="[]"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/hanfeil2/multi-project/openmrs-core"/>
+    <property name="java.runtime.version" value="1.8.0_151-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="STARTS1098696485" value="STARTS-invoked"/>
+    <property name="os.name" value="Linux"/>
+    <property name="edu.illinois.starts.maven.AgentLoader Initialized" value=""/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="3.10.0-693.5.2.el7.x86_64"/>
+    <property name="user.home" value="/home/hanfeil2"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="STARTS1331946439" value="STARTS-invoked"/>
+    <property name="user.name" value="hanfeil2"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher starts:starts -DstartsLogging=FINEST"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_151"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="[PROFILE] END-OF-RUN-MOJO: " value="1511713344662"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="startsLogging" value="FINEST"/>
+  </properties>
+  <testcase name="getUsers_shouldFetchUsersWithAtLeastOneOfTheGivenRoleObjects" classname="org.openmrs.api.UserServiceTest" time="0.085"/>
+  <testcase name="getUsers_shouldMatchSearchToFamilyName2" classname="org.openmrs.api.UserServiceTest" time="0.03"/>
+  <testcase name="getUsers_shouldReturnUsersWhoseRolesInheritRequestedRoles" classname="org.openmrs.api.UserServiceTest" time="0.028"/>
+  <testcase name="getUsers_shouldFetchUsersWithNameThatContainsGivenNameSearch" classname="org.openmrs.api.UserServiceTest" time="0"/>
+  <testcase name="getPrivilege_shouldFetchPrivilegeForGivenName" classname="org.openmrs.api.UserServiceTest" time="0.027"/>
+  <testcase name="setUserProperty_shouldThrowErrorWhenUserIsNotAuthorizedToEditUsers" classname="org.openmrs.api.UserServiceTest" time="0.023"/>
+  <testcase name="changeHashedPassword_shouldChangeTheHashedPasswordForTheGivenUser" classname="org.openmrs.api.UserServiceTest" time="0"/>
+  <testcase name="changePassword_shouldChangePasswordForTheGivenUserAndPassword" classname="org.openmrs.api.UserServiceTest" time="0.015"/>
+  <testcase name="changePassword_shouldThrowAPIExceptionIfOldPasswordIsNotCorrect" classname="org.openmrs.api.UserServiceTest" time="0.014"/>
+  <testcase name="getAllRoles_shouldReturnAllRolesInTheSystem" classname="org.openmrs.api.UserServiceTest" time="0.032"/>
+  <testcase name="getUsersByPerson_shouldNotFetchRetiredAccountsWhenIncludeRetiredIsFalse" classname="org.openmrs.api.UserServiceTest" time="0.024"/>
+  <testcase name="createUser_shouldNotAllowExistingUser" classname="org.openmrs.api.UserServiceTest" time="0.02"/>
+  <testcase name="purgePrivilege_shouldDeleteGivenPrivilegeFromTheDatabase" classname="org.openmrs.api.UserServiceTest" time="0.869"/>
+  <testcase name="changePassword_shouldBeAbleToUpdatePasswordMultipleTimes" classname="org.openmrs.api.UserServiceTest" time="0.011"/>
+  <testcase name="getAllPrivileges_shouldReturnAllPrivilegesInTheSystem" classname="org.openmrs.api.UserServiceTest" time="0.029"/>
+  <testcase name="setUserProperty_shouldReturnNullIfUserIsNull" classname="org.openmrs.api.UserServiceTest" time="0.014"/>
+  <testcase name="changePassword_shouldMatchOnIncorrectlyHashedSha1StoredPassword" classname="org.openmrs.api.UserServiceTest" time="0.029"/>
+  <testcase name="changeQuestionAnswer_shouldMatchOnIncorrectlyHashedStoredPassword" classname="org.openmrs.api.UserServiceTest" time="0.031"/>
+  <testcase name="saveUserProperties_shouldRemoveAllExistingPropertiesAndAssignNewProperties" classname="org.openmrs.api.UserServiceTest" time="0.027"/>
+  <testcase name="getRoleByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.UserServiceTest" time="0"/>
+  <testcase name="createUser_shouldNotAllowDuplicatedSystemId" classname="org.openmrs.api.UserServiceTest" time="0.014"/>
+  <testcase name="shouldFetchNamesForPersonsThatWereFirstFetchedAsUsers" classname="org.openmrs.api.UserServiceTest" time="0.011"/>
+  <testcase name="createUser_shouldNotAllowUsernameEqualsExistingSystemId" classname="org.openmrs.api.UserServiceTest" time="0"/>
+  <testcase name="removeUserProperty_shouldReturnNullIfUserIsNull" classname="org.openmrs.api.UserServiceTest" time="0.009"/>
+  <testcase name="changePassword_shouldThrowShortPasswordExceptionWithShortPassword" classname="org.openmrs.api.UserServiceTest" time="0"/>
+  <testcase name="createUser_shouldNotAllowNullPassword" classname="org.openmrs.api.UserServiceTest" time="0.002"/>
+  <testcase name="changePassword_shouldNotUpdatePasswordOfGivenUserWhenLoggedInUserDoesNotHaveEditUsersPasswordPrivilege" classname="org.openmrs.api.UserServiceTest" time="0.017"/>
+  <testcase name="getAllUsers_shouldNotContainsAnyDuplicateUsers" classname="org.openmrs.api.UserServiceTest" time="0.023"/>
+  <testcase name="getUsersByName_shouldNotFetchAnyVoidedUsersWhenIncludeVoidedIsFalse" classname="org.openmrs.api.UserServiceTest" time="0.007"/>
+  <testcase name="purgeRole_shouldThrowErrorWhenRoleHasChildRoles" classname="org.openmrs.api.UserServiceTest" time="0.011"/>
+  <testcase name="getUser_shouldFetchUserWithGivenUserId" classname="org.openmrs.api.UserServiceTest" time="0"/>
+  <testcase name="getUserByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.UserServiceTest" time="0.011"/>
+  <testcase name="getUsersByName_shouldFetchUsersExactlyMatchingTheGivenGivenNameAndFamilyName" classname="org.openmrs.api.UserServiceTest" time="0.098"/>
+  <testcase name="isSecretAnswer_shouldReturnFalseWhenGivenAnswerDoesNotMatchTheStoredSecretAnswer" classname="org.openmrs.api.UserServiceTest" time="0.207"/>
+  <testcase name="changePasswordUsingSecretAnswer_shouldUpdatePasswordIfSecretIsCorrect" classname="org.openmrs.api.UserServiceTest" time="0.023"/>
+  <testcase name="setUserProperty_shouldModifyPropertyWithGivenKeyAndValueWhenKeyAlreadyExists" classname="org.openmrs.api.UserServiceTest" time="0.022"/>
+  <testcase name="purgeUser_shouldDeleteGivenUser" classname="org.openmrs.api.UserServiceTest" time="0"/>
+  <testcase name="retireUser_shouldRetireUserAndSetAttributes" classname="org.openmrs.api.UserServiceTest" time="0.007"/>
+  <testcase name="createUser_shouldNotAllowBlankPassword" classname="org.openmrs.api.UserServiceTest" time="0"/>
+  <testcase name="getPrivilegeByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.UserServiceTest" time="0.012"/>
+  <testcase name="isSecretAnswer_shouldReturnTrueWhenGivenAnswerMatchesStoredSecretAnswer" classname="org.openmrs.api.UserServiceTest" time="0.013"/>
+  <testcase name="purgeUser_shouldDeleteGivenUserWhenCascadeEqualsFalse" classname="org.openmrs.api.UserServiceTest" time="0"/>
+  <testcase name="savePrivilege_shouldSaveGivenPrivilegeToTheDatabase" classname="org.openmrs.api.UserServiceTest" time="0.014"/>
+  <testcase name="getUsers_shouldFetchUsersWithSystemIdThatContainsGivenNameSearch" classname="org.openmrs.api.UserServiceTest" time="0.011"/>
+  <testcase name="removeUserProperty_shouldRemoveUserPropertyForGivenUserAndKey" classname="org.openmrs.api.UserServiceTest" time="0.023"/>
+  <testcase name="changePassword_shouldMatchOnCorrectlyHashedSha1StoredPassword" classname="org.openmrs.api.UserServiceTest" time="0.025"/>
+  <testcase name="getUsers_shouldNotFailIfRolesAreSearchedButNameIsEmpty" classname="org.openmrs.api.UserServiceTest" time="0.011"/>
+  <testcase name="changePassword_shouldThrowExceptionIfNewPasswortIsTooShort" classname="org.openmrs.api.UserServiceTest" time="0.02"/>
+  <testcase name="getUserByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.UserServiceTest" time="0"/>
+  <testcase name="setUserProperty_shouldAddPropertyWithGivenKeyAndValueWhenKeyDoesNotAlreadyExist" classname="org.openmrs.api.UserServiceTest" time="0.025"/>
+  <testcase name="getUsers_shouldNotFetchDuplicateUsers" classname="org.openmrs.api.UserServiceTest" time="0.038"/>
+  <testcase name="purgeRole_shouldReturnIfRoleIsNull" classname="org.openmrs.api.UserServiceTest" time="0"/>
+  <testcase name="getUsers_shouldFetchAllUsersIfNameSearchIsEmptyOrNull" classname="org.openmrs.api.UserServiceTest" time="0.012"/>
+  <testcase name="createUser_shouldCreateNewUserWithBasicElements" classname="org.openmrs.api.UserServiceTest" time="0.011"/>
+  <testcase name="unretireUser_shouldUnretireAndUnmarkAllAttributes" classname="org.openmrs.api.UserServiceTest" time="0"/>
+  <testcase name="changePassword_shouldUpdatePasswordOfGivenUserWhenLoggedInUserHasEditUsersPasswordPrivilege" classname="org.openmrs.api.UserServiceTest" time="0"/>
+  <testcase name="saveRole_shouldThrowErrorIfRoleInheritsFromItself" classname="org.openmrs.api.UserServiceTest" time="0.007"/>
+  <testcase name="changePassword_shouldMatchOnSha512HashedPassword" classname="org.openmrs.api.UserServiceTest" time="0.024"/>
+  <testcase name="getRole_shouldFetchRoleForGivenRoleName" classname="org.openmrs.api.UserServiceTest" time="0.014"/>
+  <testcase name="getUsers_shouldNotFetchVoidedUsersIfIncludedVoidedIsFalse" classname="org.openmrs.api.UserServiceTest" time="0"/>
+  <testcase name="createUser_shouldNotAllowSystemIdEqualsExistingUsername" classname="org.openmrs.api.UserServiceTest" time="0.005"/>
+  <testcase name="saveUser_shouldUpdateUsersUsername" classname="org.openmrs.api.UserServiceTest" time="0.005"/>
+  <testcase name="getUsersByRole_shouldFetchUsersAssignedGivenRole" classname="org.openmrs.api.UserServiceTest" time="0.028"/>
+  <testcase name="saveRole_shouldSaveGivenRoleToTheDatabase" classname="org.openmrs.api.UserServiceTest" time="0"/>
+  <testcase name="hasDuplicateUsername_shouldVerifyThatUsernameAndSystemIdIsUnique" classname="org.openmrs.api.UserServiceTest" time="0.025"/>
+  <testcase name="purgeRole_shouldDeleteGivenRoleFromDatabase" classname="org.openmrs.api.UserServiceTest" time="0.012"/>
+  <testcase name="saveUser_shouldGrantNewRolesInRolesListToUser" classname="org.openmrs.api.UserServiceTest" time="0.028"/>
+  <testcase name="createUser_shouldNotAllowSystemIdEqualsUsernameWithLuhnCheckDigit" classname="org.openmrs.api.UserServiceTest" time="0.01"/>
+  <testcase name="getUsers_shouldFetchVoidedUsersIfIncludedVoidedIsTrue" classname="org.openmrs.api.UserServiceTest" time="0"/>
+  <testcase name="changePassword_shouldChangePasswordForGivenUserIfOldPasswordIsCorrectlyPassed" classname="org.openmrs.api.UserServiceTest" time="0.016"/>
+  <testcase name="purgePrivilege_shouldThrowErrorWhenPrivilegeIsCorePrivilege" classname="org.openmrs.api.UserServiceTest" time="0"/>
+  <testcase name="changePassword_shouldThrowAPIExceptionIfGivenUserDoesNotExist" classname="org.openmrs.api.UserServiceTest" time="0"/>
+  <testcase name="saveUserProperty_shouldAddNewPropertyToExistingUserProperties" classname="org.openmrs.api.UserServiceTest" time="0.016"/>
+  <testcase name="getUsersByName_shouldNotFetchAnyDuplicateUsers" classname="org.openmrs.api.UserServiceTest" time="0.12"/>
+  <testcase name="getAllUsers_shouldFetchAllUsersInTheSystem" classname="org.openmrs.api.UserServiceTest" time="0.176"/>
+  <testcase name="createUser_shouldShouldCreateUserWhoIsPatientAlready" classname="org.openmrs.api.UserServiceTest" time="0.096"/>
+  <testcase name="getRoleByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.UserServiceTest" time="0.177"/>
+  <testcase name="changePassword_shouldThrowExceptionIfOldPasswordIsNullAndChangingUserHaveNotPrivileges" classname="org.openmrs.api.UserServiceTest" time="0.011"/>
+  <testcase name="purgeUser_shouldThrowAPIExceptionIfCascadeIsTrue" classname="org.openmrs.api.UserServiceTest" time="0"/>
+  <testcase name="getUsersByPerson_shouldFetchAllAccountsForAPersonWhenIncludeRetiredIsTrue" classname="org.openmrs.api.UserServiceTest" time="0.018"/>
+  <testcase name="changeQuestionAnswer_shouldChangeTheSecretQuestionAndAnswerForGivenUser" classname="org.openmrs.api.UserServiceTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="getUsersByName_shouldFetchVoidedUsersWhenincludeVoidedIsTrue" classname="org.openmrs.api.UserServiceTest" time="0.011"/>
+  <testcase name="getUserByUsername_shouldGetUserByUsername" classname="org.openmrs.api.UserServiceTest" time="0"/>
+  <testcase name="removeUserProperty_shouldThrowErrorWhenUserIsNotAuthorizedToEditUsers" classname="org.openmrs.api.UserServiceTest" time="0.018"/>
+  <testcase name="changeQuestionAnswer_shouldMatchOnCorrectlyHashedStoredPassword" classname="org.openmrs.api.UserServiceTest" time="0.022"/>
+  <testcase name="getPrivilegeByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.UserServiceTest" time="0.013"/>
+  <testcase name="changePasswordUsingSecretAnswer_shouldNotUpdatePasswordIfSecretIsNotCorrect" classname="org.openmrs.api.UserServiceTest" time="0.011"/>
+  <testcase name="saveUser_shouldFailToCreateTheUserWithAWeakPassword" classname="org.openmrs.api.UserServiceTest" time="0.011"/>
+  <testcase name="getUsersByRole_shouldNotFetchUserThatDoesNotBelongToGivenRole" classname="org.openmrs.api.UserServiceTest" time="0.022"/>
+  <testcase name="getUserByUuid_shouldFetchUserWithGivenUuid" classname="org.openmrs.api.UserServiceTest" time="0.079"/>
+  <testcase name="purgeRole_shouldThrowErrorWhenRoleIsACoreRole" classname="org.openmrs.api.UserServiceTest" time="0.168"/>
+  <testcase name="createUser_shouldNotAllowForDuplicatedUsername" classname="org.openmrs.api.UserServiceTest" time="0.003"/>
+  <testcase name="changePassword_shouldChangePasswordForGivenUserIfOldPasswordIsNullAndChangingUserHavePrivileges" classname="org.openmrs.api.UserServiceTest" time="0.022"/>
+</testsuite>

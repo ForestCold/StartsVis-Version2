@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.openmrs.api.OrderServiceTest" time="1.332" tests="165" errors="0" skipped="3" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.151-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="STARTS_EXCLUDES" value="[]"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/hanfeil2/multi-project/openmrs-core"/>
+    <property name="java.runtime.version" value="1.8.0_151-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="STARTS1098696485" value="STARTS-invoked"/>
+    <property name="os.name" value="Linux"/>
+    <property name="edu.illinois.starts.maven.AgentLoader Initialized" value=""/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="3.10.0-693.5.2.el7.x86_64"/>
+    <property name="user.home" value="/home/hanfeil2"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="STARTS1331946439" value="STARTS-invoked"/>
+    <property name="user.name" value="hanfeil2"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher starts:starts -DstartsLogging=FINEST"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_151"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="[PROFILE] END-OF-RUN-MOJO: " value="1511713344662"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="startsLogging" value="FINEST"/>
+  </properties>
+  <testcase name="saveOrder_shouldPassForADiscontinuationOrderWithNoPreviousOrder" classname="org.openmrs.api.OrderServiceTest" time="0.019"/>
+  <testcase name="saveOrder_shouldDefaultToCareSettingAndOrderTypeDefinedInTheOrderContextIfNull" classname="org.openmrs.api.OrderServiceTest" time="0.001"/>
+  <testcase name="getOrders_shouldGetAllUnvoidedMatchesIfIncludeVoidedIsSetToFalse" classname="org.openmrs.api.OrderServiceTest" time="0.011"/>
+  <testcase name="saveOrderFrequency_shouldAddANewOrderFrequencyToTheDatabase" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="saveOrder_shouldNotAllowRevisingAVoidedOrder" classname="org.openmrs.api.OrderServiceTest" time="0.012"/>
+  <testcase name="saveOrder_shouldSetAutoExpireDateOfDrugOrderIfAutoExpireDateIsNotSet" classname="org.openmrs.api.OrderServiceTest" time="0.041"/>
+  <testcase name="getOrders_shouldFailIfCareSettingIsNull" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="getOrderFrequencies_shouldRejectANullSearchPhrase" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="getOrders_shouldGetTheOrdersThatMatchAllTheArguments" classname="org.openmrs.api.OrderServiceTest" time="0.007"/>
+  <testcase name="getOrderFrequencies_shouldGetNonRetiredFrequenciesWithNamesMatchingThePhraseIfIncludeRetiredIsFalse" classname="org.openmrs.api.OrderServiceTest" time="0.011"/>
+  <testcase name="getDiscontinuationOrder_shouldReturnNullIfDcOrderIsVoided" classname="org.openmrs.api.OrderServiceTest" time="0.011"/>
+  <testcase name="getActiveOrders_shouldReturnAllOrdersIfNoOrderTypeIsSpecified" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="saveRetrospectiveOrder_shouldFailIfAnActiveDrugOrderForTheSameConceptAndCareSettingExistsAtOrderDateActivated" classname="org.openmrs.api.OrderServiceTest" time="0.025"/>
+  <testcase name="getOrderFrequencyByConcept_shouldReturnTheOrderFrequencyThatMatchesTheSpecifiedConcept" classname="org.openmrs.api.OrderServiceTest" time="0.002"/>
+  <testcase name="voidOrder_shouldUnsetDateStoppedOfThePreviousOrderIfTheSpecifiedOrderIsARevision" classname="org.openmrs.api.OrderServiceTest" time="0.005"/>
+  <testcase name="getOrderFrequencies_shouldGetFrequenciesWithNamesThatMatchThePhraseAndLocalesIfExactLocaleIsFalse" classname="org.openmrs.api.OrderServiceTest" time="0.01"/>
+  <testcase name="saveOrder_shouldFailIfConceptInPreviousOrderDoesNotMatchThisConcept" classname="org.openmrs.api.OrderServiceTest" time="0.013"/>
+  <testcase name="saveOrder_shouldSetOrderTypeOfTestOrderToTestOrderIfNotSetAndConceptNotMapped" classname="org.openmrs.api.OrderServiceTest" time="0.01"/>
+  <testcase name="getOrders_shouldFailIfPatientIsNull" classname="org.openmrs.api.OrderServiceTest" time="0.003"/>
+  <testcase name="getOrderHistoryByConcept_shouldReturnEmptyListForConceptWithoutOrders" classname="org.openmrs.api.OrderServiceTest" time="0.004"/>
+  <testcase name="unvoidOrder_shouldFailForADiscontinuationOrderIfThePreviousOrderIsInactive" classname="org.openmrs.api.OrderServiceTest" time="0.015"/>
+  <testcase name="getCareSettingByName_shouldReturnTheCareSettingWithTheSpecifiedName" classname="org.openmrs.api.OrderServiceTest" time="0.005"/>
+  <testcase name="saveOrderType_shouldEditAnExistingOrderType" classname="org.openmrs.api.OrderServiceTest" time="0.006"/>
+  <testcase name="getActiveOrders_shouldReturnAllActiveTestOrdersForTheSpecifiedPatient" classname="org.openmrs.api.OrderServiceTest" time="0.007"/>
+  <testcase name="saveOrder_shouldRollTheAutoExpireDateToTheEndOfTheDayIfItHasNoTimeComponent" classname="org.openmrs.api.OrderServiceTest" time="0.01"/>
+  <testcase name="saveOrderType_shouldAddANewOrderTypeToTheDatabase" classname="org.openmrs.api.OrderServiceTest" time="0.005"/>
+  <testcase name="saveOrder_shouldPassIfAnActiveDrugOrderForTheSameConceptAndCareSettingButDifferentFormulationExists" classname="org.openmrs.api.OrderServiceTest" time="0.024"/>
+  <testcase name="getRevisionOrder_shouldReturnNullIfOrderHasNotBeenRevised" classname="org.openmrs.api.OrderServiceTest" time="0.003"/>
+  <testcase name="purgeOrder_shouldDeleteAnyObsAssociatedToTheOrderWhenCascadeIsTrue" classname="org.openmrs.api.OrderServiceTest" time="0.021"/>
+  <testcase name="saveOrder_shouldNotAllowRevisingAnExpiredOrder" classname="org.openmrs.api.OrderServiceTest" time="0.009"/>
+  <testcase name="saveOrder_shouldSetOrderNumberSpecifiedInTheContextIfSpecified" classname="org.openmrs.api.OrderServiceTest" time="0.011"/>
+  <testcase name="voidOrder_shouldUnsetDateStoppedOfThePreviousOrderIfTheSpecifiedOrderIsADiscontinuation" classname="org.openmrs.api.OrderServiceTest" time="0.007"/>
+  <testcase name="saveOrder_shouldPassIfAnActiveTestOrderForTheSameConceptAndCareSettingExists" classname="org.openmrs.api.OrderServiceTest" time="0.013"/>
+  <testcase name="getOrderFrequencies_shouldReturnAllTheOrderFrequenciesIfIncludeRetiredIsSetToTrue" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="saveOrder_shouldNotSaveOrderIfOrderDoesntValidate" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="getOrderHistoryByConcept_shouldRejectANullPatient" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="getRevisionOrder_shouldNotReturnAVoidedRevisionOrder" classname="org.openmrs.api.OrderServiceTest" time="0.018"/>
+  <testcase name="getOrderFrequencies_shouldReturnOnlyNonRetiredOrderFrequenciesIfIncludeRetiredIsSetToFalse" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="getNonCodedDrugConcept_shouldReturnNullIfNothingIsConfigured" classname="org.openmrs.api.OrderServiceTest" time="0.011"/>
+  <testcase name="saveOrder_shouldFailIfOrderTypeIsNullAndNotMappedToTheConceptClass" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="voidOrder_shouldVoidAnOrder" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="getOrderFrequencies_shouldIncludeRetiredFrequenciesIfIncludeRetiredIsSetToTrue" classname="org.openmrs.api.OrderServiceTest" time="0.017"/>
+  <testcase name="getOrderByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="saveOrderFrequency_shouldNotAllowEditingAnExistingOrderFrequencyThatIsInUse" classname="org.openmrs.api.OrderServiceTest" time="0.007"/>
+  <testcase name="saveOrder_shouldThrowAmbiguousOrderExceptionIfAnActiveDrugOrderForTheSameDrugFormulationExists" classname="org.openmrs.api.OrderServiceTest" time="0.015"/>
+  <testcase name="discontinueOrder_shouldFailIfDiscontinueDateIsInTheFuture" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="saveOrder_shouldSetTheOrderNumberReturnedByTheConfiguredGenerator" classname="org.openmrs.api.OrderServiceTest" time="0.029"/>
+  <testcase name="getOrderTypes_shouldGetAllOrderTypesIfIncludeRetiredIsSetToTrue" classname="org.openmrs.api.OrderServiceTest" time="0.003"/>
+  <testcase name="getOrderFrequencies_shouldReturnUniqueFrequencies" classname="org.openmrs.api.OrderServiceTest" time="0.014"/>
+  <testcase name="getOrderFrequencyByUuid_shouldReturnTheOrderFrequencyThatMatchesTheSpecifiedUuid" classname="org.openmrs.api.OrderServiceTest" time="0.009"/>
+  <testcase name="unvoidOrder_shouldStopThePreviousOrderIfTheSpecifiedOrderIsARevision" classname="org.openmrs.api.OrderServiceTest" time="0.003"/>
+  <testcase name="getTestSpecimenSources_shouldReturnAnEmptyListIfNothingIsConfigured" classname="org.openmrs.api.OrderServiceTest" time="0.003"/>
+  <testcase name="saveOrder_shouldThrowAmbiguousOrderExceptionIfDisconnectingMultipleActiveOrdersForTheGivenConcepts" classname="org.openmrs.api.OrderServiceTest" time="0.015"/>
+  <testcase name="getAllOrdersByPatient_shouldGetAllTheOrdersForTheSpecifiedPatient" classname="org.openmrs.api.OrderServiceTest" time="0.006"/>
+  <testcase name="unretireOrderFrequency_shouldUnretireGivenOrderFrequency" classname="org.openmrs.api.OrderServiceTest" time="0.011"/>
+  <testcase name="getOrderType_shouldReturnNullIfNoOrderTypeObjectFoundWithGivenId" classname="org.openmrs.api.OrderServiceTest" time="0.002"/>
+  <testcase name="getOrders_shouldIncludeVoidedMatchesIfIncludeVoidedIsSetToTrue" classname="org.openmrs.api.OrderServiceTest" time="0.006"/>
+  <testcase name="getOrderByOrderNumber_shouldFindObjectGivenValidOrderNumber" classname="org.openmrs.api.OrderServiceTest" time="0.003"/>
+  <testcase name="discontinueOrder_shouldFailForADiscontinuedOrder" classname="org.openmrs.api.OrderServiceTest" time="0.004"/>
+  <testcase name="getNonCodedDrugConcept_shouldReturnAConceptIfGPIsSet" classname="org.openmrs.api.OrderServiceTest" time="0.017"/>
+  <testcase name="discontinueOrder_shouldPopulateCorrectAttributesOnTheDiscontinueAndDiscontinuedOrders" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="getOrderByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.OrderServiceTest" time="0.011"/>
+  <testcase name="getOrderByOrderNumber_shouldReturnNullIfNoObjectFoundWithGivenOrderNumber" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="saveOrder_shouldPassIfAnActiveOrderForTheSameConceptExistsInADifferentCareSetting" classname="org.openmrs.api.OrderServiceTest" time="0.011"/>
+  <testcase name="getOrderHistoryByOrderNumber_shouldReturnAllOrderHistoryForGivenOrderNumber" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="saveOrder_shouldRevisePreviousNonCodedOrderIfItIsAlreadyExisting" classname="org.openmrs.api.OrderServiceTest" time="0.023"/>
+  <testcase name="saveOrder_shouldFailIfTheExistingDrugOrderMatchesTheConceptAndNotDrugOfTheRevisedOrder" classname="org.openmrs.api.OrderServiceTest" time="0.011"/>
+  <testcase name="purgeOrderFrequency_shouldNotAllowDeletingAnOrderFrequencyThatIsInUse" classname="org.openmrs.api.OrderServiceTest" time="0.011"/>
+  <testcase name="saveOrder_shouldSaveARevisedOrder" classname="org.openmrs.api.OrderServiceTest" time="0.022"/>
+  <testcase name="getOrderTypeByConceptClass_shouldGetOrderTypeMappedToTheGivenConceptClass" classname="org.openmrs.api.OrderServiceTest" time="0.011"/>
+  <testcase name="getAllOrdersByPatient_shouldFailIfPatientIsNull" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="purgeOrderType_shouldNotAllowDeletingAnOrderTypeThatIsInUse" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="getTestSpecimenSources_shouldReturnAListIfGPIsSet" classname="org.openmrs.api.OrderServiceTest" time="0.011"/>
+  <testcase name="getDiscontinuationOrder_shouldReturnNullIfOrderHasNotBeenDiscontinued" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="getOrderType_shouldFindOrderTypeObjectGivenValidId" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="unretireOrderType_shouldUnretireOrderType" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="saveOrder_shouldDiscontinuePreviousNonCodedOrderIfItIsNotAlreadyDiscontinued" classname="org.openmrs.api.OrderServiceTest" time="0.022"/>
+  <testcase name="discontinueOrder_shouldRejectAFutureDiscontinueDate" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="saveOrder_shouldSaveARevisedOrderForAScheduledOrderWhichIsNotStarted" classname="org.openmrs.api.OrderServiceTest" time="0.008"/>
+  <testcase name="discontinueOrder_shouldFailForADiscontinuationOrder" classname="org.openmrs.api.OrderServiceTest" time="0.009"/>
+  <testcase name="saveOrder_shouldPassIfAnActiveDrugOrderForTheSameDrugFormulationExistsBeyondSchedule" classname="org.openmrs.api.OrderServiceTest" time="0.036"/>
+  <testcase name="getOrderTypeByConcept_shouldGetOrderTypeMappedToTheGivenConcept" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="discontinueOrder_shouldNotPassForADiscontinuationOrder" classname="org.openmrs.api.OrderServiceTest" time="0.015"/>
+  <testcase name="saveOrder_shouldNotAllowEditingAnExistingOrder" classname="org.openmrs.api.OrderServiceTest" time="0.019"/>
+  <testcase name="discontinueOrder_shouldFailForAStoppedOrder" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="getCareSettings_shouldReturnOnlyUnRetiredCareSettingsIfIncludeRetiredIsSetToFalse" classname="org.openmrs.api.OrderServiceTest" time="0.013"/>
+  <testcase name="saveOrder_shouldSetOrderTypeOfDrugOrderToDrugOrderIfNotSetAndConceptNotMapped" classname="org.openmrs.api.OrderServiceTest" time="0.011"/>
+  <testcase name="saveOrder_shouldFailIfAnActiveDrugOrderForTheSameConceptAndDrugNonCodedAndCareSettingExists" classname="org.openmrs.api.OrderServiceTest" time="0.022"/>
+  <testcase name="saveOrder_shouldFailIfAnActiveDrugOrderForTheSameConceptAndCareSettingExists" classname="org.openmrs.api.OrderServiceTest" time="0.022"/>
+  <testcase name="saveOrderFrequency_shouldEditAnExistingOrderFrequencyThatIsNotInUse" classname="org.openmrs.api.OrderServiceTest" time="0.027"/>
+  <testcase name="saveOrder_shouldFailForRevisionOrderIfAnActiveDrugOrderForTheSameConceptAndCareSettingsExists" classname="org.openmrs.api.OrderServiceTest" time="0">
+    <skipped message="Ignored because it fails after removal of deprecated methods TRUNK-4772"/>
+  </testcase>
+  <testcase name="getActiveOrders_shouldReturnAllActiveDrugOrdersForTheSpecifiedPatient" classname="org.openmrs.api.OrderServiceTest" time="0.005"/>
+  <testcase name="getRevisionOrder_shouldReturnRevisionOrderIfOrderHasBeenRevised" classname="org.openmrs.api.OrderServiceTest" time="0.004"/>
+  <testcase name="retireOrderFrequency_shouldRetireGivenOrderFrequency" classname="org.openmrs.api.OrderServiceTest" time="0.009"/>
+  <testcase name="saveOrder_shouldFailIfConceptInPreviousOrderDoesNotMatchThatOfTheRevisedOrder" classname="org.openmrs.api.OrderServiceTest" time="0.003"/>
+  <testcase name="getDrugDosingUnits_shouldReturnAListIfGPIsSet" classname="org.openmrs.api.OrderServiceTest" time="0.003"/>
+  <testcase name="getNewOrderNumber_shouldAlwaysReturnUniqueOrderNumbersWhenCalledMultipleTimesWithoutSavingOrders" classname="org.openmrs.api.OrderServiceTest" time="0.088"/>
+  <testcase name="getOrderHistoryByConcept_shouldRejectANullConcept" classname="org.openmrs.api.OrderServiceTest" time="0.004"/>
+  <testcase name="saveOrder_shouldFailIfTheJavaTypeOfThePreviousOrderDoesNotMatch" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="getDrugDispensingUnits_shouldReturnTheUnionOfTheDosingAndDispensingUnits" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="getActiveOrders_shouldFailIfPatientIsNull" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="retireOrderType_shouldRetireOrderType" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="getOrderSubTypes_shouldGetAllSubOrderTypesWithRetiredOrderTypes" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="getOrderTypeByUuid_shouldReturnNullIfNoOrderTypeObjectFoundWithGivenUuid" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="getCareSettingByUuid_shouldReturnTheCareSettingWithTheSpecifiedUuid" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="getOrderHistoryByConcept_shouldReturnOrdersWithTheGivenConcept" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="getOrderSubTypes_shouldGetAllSubOrderTypesWithoutRetiredOrderTypes" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="getActiveOrders_shouldReturnAllActiveOrdersForTheSpecifiedPatientAndCareSetting" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="discontinueOrder_shouldNotPassForADiscontinuedOrder" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="saveOrder_shouldThrowAmbiguousOrderExceptionIfDisconnectingMultipleActiveDrugOrdersWithTheSameDrug" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="saveOrder_shouldPassIfAnKnownDrugOrderForTheSameDrugFormulationSpecified" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="getOrderTypes_shouldGetAllNonRetiredOrderTypesIfIncludeRetiredIsSetToFalse" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="saveOrder_shouldSetConceptForDrugOrdersIfNull" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="getOrderFrequencies_shouldGetFrequenciesWithNamesThatMatchThePhraseAndLocaleIfExactLocaleIsTrue" classname="org.openmrs.api.OrderServiceTest" time="0.002"/>
+  <testcase name="shouldSetTheCorrectSortWeightWhenAddingAnOrderWithANegativePosition" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="saveOrder_shouldPassIfAnActiveDrugOrderForTheSameConceptAndDifferentDrugNonCodedExists" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="discontinueOrder_shouldPassForAnActiveOrderWhichIsScheduledAndNotStartedAsOfDiscontinueDateWithParamConcept" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="saveOrderWithScheduledDate_shouldAddANewOrderWithScheduledDateToTheDatabase" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="shouldSaveOrdersWithSortWeightWhenWithinAOrderGroup" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="unvoidOrder_shouldUnvoidAnOrder" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="getDurationUnits_shouldReturnAListIfGPIsSet" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="retireOrderType_shouldNotRetireIndependentField" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="shouldSetTheCorrectSortWeightWhenAddingAnOrderAtAPosition" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="saveOrder_shouldFailDiscontinueNonCodedDrugOrderIfOrderableOfPreviousAndNewOrderDontMatch" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="discontinueOrder_shouldFailForAVoidedOrder" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="getDrugRoutes_shouldGetDrugRoutesAssociatedConceptPrividedInGlobalProperties" classname="org.openmrs.api.OrderServiceTest" time="0.007"/>
+  <testcase name="discontinueOrder_shouldSetCorrectAttributesOnTheDiscontinueAndDiscontinuedOrders" classname="org.openmrs.api.OrderServiceTest" time="0.011"/>
+  <testcase name="saveOrder_shouldPassIfTheExistingDrugOrderMatchesTheConceptAndThereIsNoDrugOnThePreviousOrder" classname="org.openmrs.api.OrderServiceTest" time="0.017"/>
+  <testcase name="discontinueOrder_shouldPassForAnActiveOrderWhichIsScheduledAndNotStartedAsOfDiscontinueDate" classname="org.openmrs.api.OrderServiceTest" time="0.007"/>
+  <testcase name="saveOrder_shouldNotRevisePreviousIfAlreadyStopped" classname="org.openmrs.api.OrderServiceTest" time="0.014"/>
+  <testcase name="saveOrder_shouldPassIfTheExistingDrugOrderMatchesTheConceptAndDrugOfTheDCOrder" classname="org.openmrs.api.OrderServiceTest" time="0.009"/>
+  <testcase name="saveOrder_shouldDiscontinueExistingActiveOrderIfNewOrderBeingSavedWithActionToDiscontinue" classname="org.openmrs.api.OrderServiceTest" time="0.01"/>
+  <testcase name="saveOrder_shouldNotChangeTheAutoExpireDateIfItHasATimeComponent" classname="org.openmrs.api.OrderServiceTest" time="0.006"/>
+  <testcase name="getActiveOrders_shouldReturnActiveOrdersAsOfTheSpecifiedDate" classname="org.openmrs.api.OrderServiceTest" time="0.017"/>
+  <testcase name="saveOrder_shouldFailIfTheOrderTypeOfThePreviousOrderDoesNotMatch" classname="org.openmrs.api.OrderServiceTest" time="0.008"/>
+  <testcase name="getCareSettings_shouldReturnRetiredCareSettingsIfIncludeRetiredIsSetToTrue" classname="org.openmrs.api.OrderServiceTest" time="0.011"/>
+  <testcase name="getOrderTypeByUuid_shouldFindOrderTypeObjectGivenValidUuid" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="purgeOrder_shouldDeleteOrderFromTheDatabase" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="saveRetrospectiveOrder_shouldDiscontinueOrderInRetrospectiveEntry" classname="org.openmrs.api.OrderServiceTest" time="0.016"/>
+  <testcase name="getDrugDispensingUnits_shouldReturnAnEmptyListIfNothingIsConfigured" classname="org.openmrs.api.OrderServiceTest" time="0.003"/>
+  <testcase name="getDrugDosingUnits_shouldReturnAnEmptyListIfNothingIsConfigured" classname="org.openmrs.api.OrderServiceTest" time="0.003"/>
+  <testcase name="discontinueOrder_shouldFailForAnExpiredOrder" classname="org.openmrs.api.OrderServiceTest" time="0.002"/>
+  <testcase name="getActiveOrders_shouldIncludeOrdersForSubTypesIfOrderTypeIsSpecified" classname="org.openmrs.api.OrderServiceTest" time="0.015"/>
+  <testcase name="unvoidOrder_shouldFailForAReviseOrderIfThePreviousOrderIsInactive" classname="org.openmrs.api.OrderServiceTest" time="0.026"/>
+  <testcase name="saveOrder_shouldSetOrderTypeIfNullButMappedToTheConceptClass" classname="org.openmrs.api.OrderServiceTest" time="0.007"/>
+  <testcase name="saveOrder_shouldDiscontinuePreviousOrderIfItIsNotAlreadyDiscontinued" classname="org.openmrs.api.OrderServiceTest" time="0.011"/>
+  <testcase name="saveOrder_shouldSaveRevisionOrderScheduledOnDateNotOverlappingWithAnActiveOrderForTheSameConceptAndCareSetting" classname="org.openmrs.api.OrderServiceTest" time="0">
+    <skipped message="Ignored because it fails after removal of deprecated methods TRUNK-4772"/>
+  </testcase>
+  <testcase name="saveOrder_shouldFailIfDrugNonCodedInPreviousDrugOrderDoesNotMatchThatOfTheRevisedDrugOrder" classname="org.openmrs.api.OrderServiceTest" time="0.017"/>
+  <testcase name="getActiveOrders_shouldReturnAllActiveOrdersForTheSpecifiedPatient" classname="org.openmrs.api.OrderServiceTest" time="0.005"/>
+  <testcase name="getOrderFrequency_shouldReturnTheOrderFrequencyThatMatchesTheSpecifiedId" classname="org.openmrs.api.OrderServiceTest" time="0.002"/>
+  <testcase name="saveRetrospectiveOrder_shouldDiscontinueAndStopActiveOrderInRetrospectiveEntry" classname="org.openmrs.api.OrderServiceTest" time="0.019"/>
+  <testcase name="getDiscontinuationOrder_shouldReturnDiscontinuationOrderIfOrderHasBeenDiscontinued" classname="org.openmrs.api.OrderServiceTest" time="0.005"/>
+  <testcase name="getOrders_shouldIncludeOrdersForSubTypesIfOrderTypeIsSpecified" classname="org.openmrs.api.OrderServiceTest" time="0.015"/>
+  <testcase name="unvoidOrder_shouldStopThePreviousOrderIfTheSpecifiedOrderIsADiscontinuation" classname="org.openmrs.api.OrderServiceTest" time="0.006"/>
+  <testcase name="purgeOrderType_shouldDeleteOrderTypeIfNotInUse" classname="org.openmrs.api.OrderServiceTest" time="0.003"/>
+  <testcase name="getDurationUnits_shouldReturnAnEmptyListIfNothingIsConfigured" classname="org.openmrs.api.OrderServiceTest" time="0.003"/>
+  <testcase name="saveOrder_shouldNotAllowRevisingAStoppedOrder" classname="org.openmrs.api.OrderServiceTest" time="0.008"/>
+  <testcase name="getOrderTypeByName_shouldReturnTheOrderTypeThatMatchesTheSpecifiedName" classname="org.openmrs.api.OrderServiceTest" time="0.003"/>
+  <testcase name="saveOrder_shouldPassForRevisionOrderIfAnActiveTestOrderForTheSameConceptAndCareSettingsExists" classname="org.openmrs.api.OrderServiceTest" time="0">
+    <skipped message="Ignored because it fails after removal of deprecated methods TRUNK-4772"/>
+  </testcase>
+  <testcase name="saveOrder_shouldNotAllowRevisingAnOrderWithNoPreviousOrder" classname="org.openmrs.api.OrderServiceTest" time="0.013"/>
+  <testcase name="purgeOrderFrequency_shouldDeleteGivenOrderFrequency" classname="org.openmrs.api.OrderServiceTest" time="0.011"/>
+  <testcase name="saveOrder_shouldFailIfTheCareSettingOfThePreviousOrderDoesNotMatch" classname="org.openmrs.api.OrderServiceTest" time="0"/>
+  <testcase name="saveOrder_shouldFailIfTheExistingDrugOrderMatchesTheConceptAndNotDrugOfTheDCOrder" classname="org.openmrs.api.OrderServiceTest" time="0.011"/>
+  <testcase name="shouldSetTheCorrectSortWeightWhenAddingAnOrderInOrderGroup" classname="org.openmrs.api.OrderServiceTest" time="0.019"/>
+  <testcase name="saveOrder_shouldSetAutoExpireDateForReviseOrderWithSimpleDosingInstructions" classname="org.openmrs.api.OrderServiceTest" time="0.045"/>
+</testsuite>

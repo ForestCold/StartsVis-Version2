@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.openmrs.hl7.handler.ORUR01HandlerTest
+-------------------------------------------------------------------------------
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.592 sec - in org.openmrs.hl7.handler.ORUR01HandlerTest

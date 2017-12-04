@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.openmrs.annotation.OpenmrsProfileExcludeFilterTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.186 sec - in org.openmrs.annotation.OpenmrsProfileExcludeFilterTest

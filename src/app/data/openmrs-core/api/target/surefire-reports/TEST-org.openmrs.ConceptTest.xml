@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.openmrs.ConceptTest" time="0.331" tests="72" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.151-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="STARTS_EXCLUDES" value="[]"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/hanfeil2/multi-project/openmrs-core"/>
+    <property name="java.runtime.version" value="1.8.0_151-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="STARTS1098696485" value="STARTS-invoked"/>
+    <property name="os.name" value="Linux"/>
+    <property name="edu.illinois.starts.maven.AgentLoader Initialized" value=""/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="3.10.0-693.5.2.el7.x86_64"/>
+    <property name="user.home" value="/home/hanfeil2"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="STARTS1331946439" value="STARTS-invoked"/>
+    <property name="user.name" value="hanfeil2"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher starts:starts -DstartsLogging=FINEST"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_151"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="[PROFILE] END-OF-RUN-MOJO: " value="1511713344662"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="startsLogging" value="FINEST"/>
+  </properties>
+  <testcase name="hasName_shouldReturnFalseIfNameIsNull" classname="org.openmrs.ConceptTest" time="0.125"/>
+  <testcase name="addSetMember_shouldAssignTheCallingComponentAsParentToTheConceptSet" classname="org.openmrs.ConceptTest" time="0.003"/>
+  <testcase name="getFullySpecifiedName_shouldReturnTheNameMarkedAsFullySpecifiedForTheGivenLocale" classname="org.openmrs.ConceptTest" time="0.001"/>
+  <testcase name="getNamesLocale_shouldReturnEmptyCollection" classname="org.openmrs.ConceptTest" time="0.001"/>
+  <testcase name="getDescription_shouldReturnMatchOnLanguageOnly" classname="org.openmrs.ConceptTest" time="0.002"/>
+  <testcase name="getDescription_shouldReturnMatchOnLocaleExactly" classname="org.openmrs.ConceptTest" time="0.002"/>
+  <testcase name="hasName_shouldReturnTrueIfLocaleIsNullButNameExists" classname="org.openmrs.ConceptTest" time="0.002"/>
+  <testcase name="setFullySpecifiedName_shouldAddTheNameToTheListOfNamesIfItNotAmongThemBefore" classname="org.openmrs.ConceptTest" time="0.002"/>
+  <testcase name="setShortName_shouldSetTheConceptNameTypeOfTheSpecifiedNameToShort" classname="org.openmrs.ConceptTest" time="0.003"/>
+  <testcase name="addSetMember_shouldAddTheConceptToTheCurrentListOfConceptSet" classname="org.openmrs.ConceptTest" time="0.002"/>
+  <testcase name="setBlankShortName_shouldVoidTheOldOne" classname="org.openmrs.ConceptTest" time="0.002"/>
+  <testcase name="toString_shouldReturnConceptIdIfPresentOrNull" classname="org.openmrs.ConceptTest" time="0.002"/>
+  <testcase name="setPreferredName_shouldOnlyAllowOnePreferredName" classname="org.openmrs.ConceptTest" time="0.002"/>
+  <testcase name="addSetMember_shouldAppendConceptToTheExistingListOfConceptSet" classname="org.openmrs.ConceptTest" time="0.002"/>
+  <testcase name="getSetMembers_shouldReturnConceptSetMembersSortedWithRetiredLast" classname="org.openmrs.ConceptTest" time="0.002"/>
+  <testcase name="addAnswer_shouldNotFailIfAnswersListIsNull" classname="org.openmrs.ConceptTest" time="0.002"/>
+  <testcase name="getAnswers_shouldNotReturnNullIfAnswersListIsNull" classname="org.openmrs.ConceptTest" time="0.001"/>
+  <testcase name="addName_shouldReplaceTheOldPreferredNameWithACurrentOne" classname="org.openmrs.ConceptTest" time="0.002"/>
+  <testcase name="getCompatibleNames_shouldExcludeIncompatibleLanguageLocales" classname="org.openmrs.ConceptTest" time="0.002"/>
+  <testcase name="getPreferredName_shouldReturnTheConceptNameExplicitlyMarkedAsLocalePreferred" classname="org.openmrs.ConceptTest" time="0.002"/>
+  <testcase name="getName_shouldNotFailIfNoNamesAreDefined" classname="org.openmrs.ConceptTest" time="0.002"/>
+  <testcase name="getCompatibleNames_shouldExcludeIncompatibleCountryLocales" classname="org.openmrs.ConceptTest" time="0.006"/>
+  <testcase name="getSetMembers_shouldReturnConceptSetMembersSortedAccordingToTheSortWeight" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="getAnswers_shouldInitAnswersObject" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="addSetMember_shouldInsertTheConceptInTheThirdSlot" classname="org.openmrs.ConceptTest" time="0.001"/>
+  <testcase name="addSetMember_shouldAssignTheGivenConceptAsAConceptSet" classname="org.openmrs.ConceptTest" time="0.005"/>
+  <testcase name="removeDescription_shouldRemoveDescriptionPassedFromListOfDescriptions" classname="org.openmrs.ConceptTest" time="0.001"/>
+  <testcase name="addSetMember_shouldInsertTheConceptAtTheEndWithNegativeOneIndex" classname="org.openmrs.ConceptTest" time="0.002"/>
+  <testcase name="findPossibleValues_shouldReturnListOfConceptsFromMatchingResults" classname="org.openmrs.ConceptTest" time="0.14"/>
+  <testcase name="getName_shouldReturnNameInBroaderLocaleIncaseNoneIsFoundInSpecificOne" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="getDescriptions_shouldNotReturnNullIfDescriptionsListIsNull" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="addSetMember_shouldAddConceptAsAConceptSet" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="getShortestName_shouldReturnTheShortestNameInAGivenLocaleForAConceptIfExactIsTrue" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="getAnswers_shouldReturnRetiredIfTrue" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="getAnswers_shouldNotReturnRetiredIfFalse" classname="org.openmrs.ConceptTest" time="0.001"/>
+  <testcase name="hasName_shouldReturnFalseIfLocaleIsNullButNameDoesNotExist" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="getName_shouldReturnExactNameLocaleMatchGivenExactEqualsTrue" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="setPreferredName_shouldAddTheNameToTheListOfNamesIfItNotAmongThemBefore" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="getNamesLocale_shouldReturnNonVoidedConceptName" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="getName_shouldReturnNullIfNoNamesAreFoundInLocaleGivenExactEqualsTrue" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="addName_shouldReplaceTheOldFullySpecifiedNameWithACurrentOne" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="addSetMember_shouldAppendConceptToExistingConceptSetHavingRetiredConcept" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="setShortName_shouldAddTheNameToTheListOfNamesIfItNotAmongThemBefore" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="getNamesBoolean_shouldNotReturnVoidedConceptName" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="getName_shouldReturnNameAnyNameIfNoLocaleMatchGivenExactEqualsFalse" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="getSynonyms_shouldSortPreferredFirst" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="addSetMember_shouldPlaceTheNewConceptLastInTheList" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="addName_shouldReplaceTheOldShortNameWithACurrentOne" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="addSetMember_shouldAppendConceptToExistingConceptSet" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="getDescription_shouldNotReturnLanguageOnlyMatchForExactMatches" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="setFullySpecifiedName_shouldConvertThePreviousFullySpecifiedNameIfAnyToASynonym" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="getPreferredName_shouldReturnTheFullySpecifiedNameIfNoNameIsExplicitlyMarkedAsLocalePreferred" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="setPreferredName_shouldFailIfThePreferredNameToSetToIsAnIndexTerm" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="getAllConceptNameLocales_shouldReturnAllLocalesForConceptNamesForThisConceptWithoutDuplicates" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="getNames_shouldNotReturnVoidedConceptName" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="addAnswer_shouldSetTheSortWeightToTheMaxPlusOneIfNotProvided" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="getAnswers_shouldReturnRetiredByDefault" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="getShortestName_shouldReturnTheNameMarkedAsTheShortNameForTheLocaleIfItIsPresent" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="removeConceptMapping_shouldRemoveConceptMapPassedFromListOfMappings" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="setShortName_shouldConvertThePreviousShortNameIfAnyToASynonym" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="addSetMember_shouldInsertTheConceptBeforeTheFirstWithZeroIndex" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="getShortestName_shouldReturnTheShortestNameForTheConceptFromAnyLocaleIfExactIsFalse" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="getSetMembers_shouldReturnAllTheConceptMembersOfCurrentConcept" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="getShortNameInLocale_shouldReturnTheBestShortNameForAConcept" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="setFullySpecifiedName_shouldSetTheConceptNameTypeOfTheSpecifiedNameToFullySpecified" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="getBestNameLocale_shouldReturnNull" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="getShortestName_shouldReturnNullIfTheirAreNoNamesInTheSpecifiedLocaleAndExactIsTrue" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="getPreferredName_shouldReturnTheBesLocalePreferred" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="getSetMembers_shouldReturnUnmodifiableListOfConceptMemberList" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="getDescription_shouldNotReturnMatchOnLanguageOnlyIfExactMatchExists" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="getName_shouldReturnNameWithinSameLanguageIfExactEqualsFalse" classname="org.openmrs.ConceptTest" time="0"/>
+  <testcase name="addName_shouldMarkTheFirstNameAddedAsFullySpecified" classname="org.openmrs.ConceptTest" time="0.011"/>
+</testsuite>

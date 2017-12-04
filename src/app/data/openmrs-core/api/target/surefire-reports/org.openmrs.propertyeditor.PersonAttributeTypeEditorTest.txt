@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.openmrs.propertyeditor.PersonAttributeTypeEditorTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.226 sec - in org.openmrs.propertyeditor.PersonAttributeTypeEditorTest

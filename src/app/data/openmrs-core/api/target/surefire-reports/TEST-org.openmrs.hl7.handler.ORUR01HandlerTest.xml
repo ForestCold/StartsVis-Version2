@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.openmrs.hl7.handler.ORUR01HandlerTest" time="1.48" tests="39" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.151-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="STARTS_EXCLUDES" value="[]"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/hanfeil2/multi-project/openmrs-core"/>
+    <property name="java.runtime.version" value="1.8.0_151-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="STARTS1098696485" value="STARTS-invoked"/>
+    <property name="os.name" value="Linux"/>
+    <property name="edu.illinois.starts.maven.AgentLoader Initialized" value=""/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="3.10.0-693.5.2.el7.x86_64"/>
+    <property name="user.home" value="/home/hanfeil2"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="STARTS1331946439" value="STARTS-invoked"/>
+    <property name="user.name" value="hanfeil2"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher starts:starts -DstartsLogging=FINEST"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_151"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="[PROFILE] END-OF-RUN-MOJO: " value="1511713344662"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="startsLogging" value="FINEST"/>
+  </properties>
+  <testcase name="processMessage_shouldSetValueAsBooleanForObsIfTheAnswerIs0Or1AndQuestionDatatypeIsBoolean" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.099"/>
+  <testcase name="processNK1_shouldFailIfTheRelationshipTypeIsNotFound" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.034"/>
+  <testcase name="processMessage_shouldPreferFormIdIfUuidIsNotFound" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.036"/>
+  <testcase name="processMessage_shouldCreateAnEncounterAndFindTheProviderByPersonId" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.036"/>
+  <testcase name="processMessage_shouldCreateObsValueCodedName" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.046"/>
+  <testcase name="processMessage_shouldNotCreateProblemListObservationWithConceptProposals" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.029"/>
+  <testcase name="processNK1_shouldCreateARelationshipFromANK1Segment" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.034"/>
+  <testcase name="processMessage_shouldFailIfQuestionDatatypeIsNeitherBooleanNorNumericNorCoded" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.037"/>
+  <testcase name="getConcept_shouldReturnAConceptIfGivenLocalCodingSystem" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.027"/>
+  <testcase name="processMessage_shouldPreferFormUuidOverIdIfBothArePresent" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.033"/>
+  <testcase name="processMessage_shouldCreateAnEncounterAndFindTheProviderByProviderId" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.036"/>
+  <testcase name="processNK1_shouldCreateAPersonIfTheRelativeIsNotFound" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.042"/>
+  <testcase name="processMessage_shouldFailIfTheProviderNameTypeCodeIsNotSpecifiedAndIsNotAPersonId" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.042"/>
+  <testcase name="processMessage_shouldCreateAnEncounterAndFindTheProviderByUuid" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.037"/>
+  <testcase name="getConcept_shouldReturnNullIfCodingSystemNotFound" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.023"/>
+  <testcase name="processMessage_shouldFailOnEmptyConceptAnswers" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.038"/>
+  <testcase name="processNK1_shouldNotCreateARelationshipIfOneExists" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.029"/>
+  <testcase name="processMessage_shouldCreateEncounterAndObsFromHl7Message" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.032"/>
+  <testcase name="parseObs_shouldAddCommentsToAnObservationFromNTESegments" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.07"/>
+  <testcase name="processMessage_shouldSetComplexDataForObsWithComplexConcepts" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.04"/>
+  <testcase name="parseObs_shouldAddMultipleCommentsForAnObservationAsOneComment" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.036"/>
+  <testcase name="processMessage_shouldSetValue_NumericForObsIfQuestionDatatypeIsNumeric" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.042"/>
+  <testcase name="processORU_R01_shouldProcessMultipleNK1Segments" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.036"/>
+  <testcase name="processMessage_shouldCreateObsGroupForOBRs" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.044"/>
+  <testcase name="getForm_shouldPassIfReturnValueIsNullWhenUuidAndIdIsNull" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.032"/>
+  <testcase name="processMessage_shouldCreateBasicConceptProposal" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.039"/>
+  <testcase name="processMessage_shouldFailIfQuestionDatatypeIsCodedAndABooleanIsNotAValidAnswer" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.056"/>
+  <testcase name="processMessage_shouldSetValue_CodedMatchingABooleanConceptForObsIfTheAnswerIs0Or1AndQuestionDatatypeIsCoded" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.026"/>
+  <testcase name="getForm_shouldPassIfReturnValueIsNotNullWhenUuidOrIdIsNotNull" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.039"/>
+  <testcase name="processNK1_shouldFailIfTheCodingSystemIsNot99REL" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.012"/>
+  <testcase name="processMessage_shouldUnderstandFormUuidIfPresent" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.042"/>
+  <testcase name="processMessage_shouldFailOnEmptyConceptProposals" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.022"/>
+  <testcase name="getConcept_shouldReturnAMappedConceptIfGivenAValidMapping" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.025"/>
+  <testcase name="processMessage_shouldSetValue_NumericForObsIfQuestionDatatypeIsNumericAndTheAnswerIsEither0Or1" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.046"/>
+  <testcase name="processNK1_shouldFailIfTheRelationshipIdentifierIsFormattedImproperly" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.028"/>
+  <testcase name="processMessage_shouldCreateAnEncounterAndFindTheProviderByIdentifier" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.038"/>
+  <testcase name="processMessage_shouldAppendToAnExistingEncounter" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.037"/>
+  <testcase name="processMessage_shouldCreateConceptProposalAndWithObsAlongside" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.044"/>
+  <testcase name="parseObs_shouldAddCommentsToAnObservationGroup" classname="org.openmrs.hl7.handler.ORUR01HandlerTest" time="0.036"/>
+</testsuite>

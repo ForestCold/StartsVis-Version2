@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.openmrs.api.AdministrationServiceTest
+-------------------------------------------------------------------------------
+Tests run: 55, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.979 sec - in org.openmrs.api.AdministrationServiceTest

@@ -1,0 +1,7 @@
+org.openmrs.web.filter.update.util.FilterUtilTest
+org.openmrs.module.web.WebModuleUtilTest
+org.openmrs.web.filter.update.UpdateFilterTest
+org.openmrs.web.filter.startuperror.StartupErrorFilterTest
+org.openmrs.web.filter.update.GZIPFilterTest
+org.openmrs.web.WebUtilTest
+org.openmrs.web.filter.update.UpdateFilterModelTest

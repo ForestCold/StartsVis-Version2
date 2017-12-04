@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.openmrs.validator.PersonNameValidatorTest
+-------------------------------------------------------------------------------
+Tests run: 59, Failures: 0, Errors: 0, Skipped: 8, Time elapsed: 0.338 sec - in org.openmrs.validator.PersonNameValidatorTest
