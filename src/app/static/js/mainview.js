@@ -81,7 +81,8 @@ vis.mainview = function() {
 
     var zoom = d3.zoom().scaleExtent([1, 10]).on("zoom", zoomed);
 
-    var graph = container.append("svg").style("width", size[0] - margin.left - margin.right).style("height", size[1] - margin.top - margin.bottom)
+    var graph = container.append("svg").
+    style("width", size[0] - margin.left - margin.right).style("height", size[1] - margin.top - margin.bottom)
     .attr("transform", "translate(" + margin.left + ',' + margin.top + ")");
 
     function zoomed() {

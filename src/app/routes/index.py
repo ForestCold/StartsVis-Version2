@@ -3,6 +3,7 @@ import os
 
 from app import app
 from flask import Flask, request
+from werkzeug import secure_filename
 
 debug = False
 
@@ -14,6 +15,9 @@ project_name = "null"
 
 # if show library
 show_library = False
+
+UPLOAD_FOLDER = 'app/data'
+
 
 @app.route('/')
 def root():
@@ -146,6 +150,8 @@ def _load(data_name):
 	modules = load_modules(modules)
 
 	return json.dumps(modules)
+
+# private function
 
 # load data for each module
 def load_modules(modules):
@@ -303,8 +309,6 @@ def load_classes(fpath):
 	}
 
 	return result
-
-# private function
 
 # parse nodes and links
 def parse_graph(in_links, tests, classes, libraries):

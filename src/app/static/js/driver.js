@@ -18,16 +18,14 @@ $(document).ready(function() {
 		d = $.parseJSON(d);
 		d.forEach(function(name) {
 			$("#dataset").append(
-				"<option>" + name + "</option>"
+				"<li " + "id='" + name +"'>" + name + "</li>"
 			);
+			$("#" + name).on("click", function(){
+				display($(this).text());
+			});
 		});
 
-		display();
 	});
-
-	$("#tabs").tabs();
-	$("#tablists").tabs();
-
 	wire_views();
 });
 
@@ -39,7 +37,9 @@ function search() {
 	mainview.select(className);
 }
 
-function display() {
+function display(module) {
+
+	data = module;
 
 	// clean contents
 	d3.select("#mainview").selectAll("*").remove();
@@ -48,12 +48,12 @@ function display() {
 	d3.select("#vview").selectAll("*").remove();
 
 	// load datasets
-	var data = $('#dataset').val();
-	if(!data || data == '') {
-		return;
-	}
+	// var data = $('#dataset').val();
+	// if(!data || data == '') {
+	// 	return;
+	// }
 
-	var url = "data/" + $('#dataset').val();
+	var url = "data/" + data;
 
 	d3.json(url, function(error, json) {
 		if (error) {

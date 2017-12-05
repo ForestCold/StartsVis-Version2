@@ -5449,13 +5449,14 @@ button.btn-floating {
 
 .dropdown-content li {
   clear: both;
-  color: rgba(0, 0, 0, 0.87);
+  color: #555;
   cursor: pointer;
   min-height: 50px;
-  line-height: 1.5rem;
+  /*line-height: 20px;*/
   width: 100%;
   text-align: left;
   text-transform: none;
+  padding-left: 10%;
 }
 
 .dropdown-content li:hover, .dropdown-content li.active, .dropdown-content li.selected {

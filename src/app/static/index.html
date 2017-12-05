@@ -7,7 +7,7 @@
 	<link type="text/css" rel="stylesheet" href="lib/jquery-ui/jquery-ui.min.css" />
 	<link type="text/css" rel="stylesheet" href="lib/contextmenu/jquery.contextmenu.css" />
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
-	<!-- <link type="text/css" rel="stylesheet" href="lib/materialize/css/materialize.css"></script> -->
+	<link type="text/css" rel="stylesheet" href="lib/materialize/css/materialize.css"></script>
 
 	<script type="text/javascript" src="lib/three.js"></script>
 	<script type="text/javascript" src="lib/d3/d3.v4.js"></script>
@@ -21,13 +21,76 @@
 	<script type="text/javascript" src="lib/export.js"></script>
 </head>
 
-<body>
-	<div id="head">
-		<img width="350px" height="100px" src="image/icon.png">
-		<!-- <h>Class Dependencies Visualization -</h>
-		<span>STARTS</span> -->
+<body style="background:#7a7e82">
+
+<nav style="background:#555555">
+	<div class="nav-wrapper">
+
+		<a href="/" class="brand-logo"><img width="310px" height="60px" style="margin-left:30px" src="image/icon.png"></a>
+
+	 <a class='dropdown-button btn' href='#' data-activates='dataset' style="margin-left:400px">Select Project!</a>
+	 <ul id='dataset' class='dropdown-content' style="margin-left:400px">
+	 </ul>
+
+		<ul id="nav-mobile" class="right hide-on-med-and-down">
+			<li class="active"><a href="javascript:void(0)" class="white-text" style="background:#5dbbdc">Analysis</a></li>
+			<li><a href="/about" class="white-text">About</a></li>
+		</ul>
+
 	</div>
-	<div style="width: 90%; height: 900px; margin: 0 auto;">
+</nav>
+
+
+  <div class="content row" style="margin: 30px">
+    <div class="col s4">
+      <div class="row">
+        <div class="subpanel z-depth-5">
+          <div class="subpanel-title">
+            <i class="material-icons white-text">insert_chart</i>
+            <label class="white-text">Project Information</label>
+          </div>
+          <div id="lview" style="background:#f9f9f9" class="subpanel-content"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="subpanel z-depth-5">
+          <div class="subpanel-title">
+            <i class="material-icons white-text">share</i>
+            <label class="white-text">Dependency Tree</label>
+          </div>
+          <div id="vview" style="background:#f9f9f9" class="subpanel-content">
+          </div>
+        </div>
+      </div>
+    </div>
+		<div class="col s8">
+			<div class="row">
+				<div class="subpanel z-depth-5">
+					<div class="subpanel-title">
+						<i class="material-icons white-text">grain</i>
+						<label class="white-text">Dependency Graph</label>
+					</div>
+					<div id="mainview" style="background:#f9f9f9" class="subpanel-content"></div>
+				</div>
+	</div>
+
+	<div class="row">
+		<div class="subpanel z-depth-5">
+			<div class="subpanel-title">
+				<i class="material-icons white-text">apps</i>
+				<label class="white-text">Modules</label>
+			</div>
+			<div id="hview" style="background:#f9f9f9; position:relative" class="subpanel-content parcoords"></div>
+		</div>
+	</div>
+
+
+
+</div>
+</div>
+
+
+	<!-- <div class="content row">
 		<div style="width: 25%; height: 100%; float: left;">
 			<div style="width: 100%; height: 33%; margin: 4px;">
 				<div class="toolbar ui-widget-header ui-corner-all">
@@ -63,7 +126,7 @@
 				<div id="hview" class="ui-widget-content ui-corner-all no_selection"></div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	</div>
 	<script type="text/javascript" src="js/vis.js"></script>
 	<script type="text/javascript" src="js/mainview.js"></script>
@@ -74,7 +137,7 @@
 	<script type="text/javascript" src="js/driver.js"></script>
 	<br>
 	<br>
-	<footer class="central footer"> &copy; 2017 - Hanfei Lin - CS527 - UIUC</footer>
+	<footer class="central footer" style="color:#fff"> &copy; 2017 - Hanfei Lin - StartsVis</footer>
 </body>
 
 </html>
