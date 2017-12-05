@@ -95,7 +95,7 @@ vis.mainview = function() {
     link = graph.append("g").attr("class", "links").selectAll("line").data(data.links).enter().append("line")
     .attr("id", d => "l" + d.id)
     .attr("stroke-width", Math.sqrt(1))
-    .attr("stroke", d => d.type == "virtual" ? "#6D9AD2" : "#999");
+    .attr("stroke", d => d.type == "virtual" ? "#B2E0F6" : "#999");
 
     //draw nodes
     var nodeData = [];
@@ -300,6 +300,7 @@ vis.mainview = function() {
 			d3.selectAll("rect").classed("classNodeUnlight", false);
 			d3.selectAll("rect").classed("classNodeHightlight", false);
 			d3.selectAll("rect").classed("classNodeSelected", false);
+      d3.selectAll("line").classed("vLinks", false);
 
       if (j != -1) {
         d3.select("#c" + j).classed("classNode", true);
@@ -330,6 +331,11 @@ vis.mainview = function() {
         d3.select("#l" + data.links[i].id).classed("highlightLinks1", true);
         d3.select("#c" + data.links[i].target.id).classed("classNodeUnlight", false);
         d3.select("#c" + data.links[i].target.id).classed("classNodeHightlight", true);
+        if (data.links[i].type == "virtual"){
+          d3.select("#l" + data.links[i].id).classed("vLinks", true);
+        } else {
+          d3.select("#l" + data.links[i].id).classed("vLinks", false);
+        }
       }
       //green: fathers
       if (data.links[i].target.id == j) {
@@ -337,6 +343,11 @@ vis.mainview = function() {
         d3.select("#l" + data.links[i].id).classed("highlightLinks2", true);
         d3.select("#c" + data.links[i].source.id).classed("classNodeUnlight", false);
         d3.select("#c" + data.links[i].source.id).classed("classNodeHightlight", true);
+        if (data.links[i].type == "virtual"){
+          d3.select("#l" + data.links[i].id).classed("vLinks", true);
+        } else {
+          d3.select("#l" + data.links[i].id).classed("vLinks", false);
+        }
       }
     }
 

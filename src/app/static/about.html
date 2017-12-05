@@ -7,8 +7,7 @@
 	<link type="text/css" rel="stylesheet" href="lib/jquery-ui/jquery-ui.min.css" />
 	<link type="text/css" rel="stylesheet" href="lib/contextmenu/jquery.contextmenu.css" />
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
-	<link type="text/css" rel="stylesheet" href="lib/materialize/css/materialize.css">
-	</script>
+	<link type="text/css" rel="stylesheet" href="lib/materialize/css/materialize.css"></script>
 
 	<script type="text/javascript" src="lib/three.js"></script>
 	<script type="text/javascript" src="lib/d3/d3.v4.js"></script>
@@ -24,18 +23,43 @@
 
 <body style="background:#7a7e82">
 
-	<nav style="background:#555555">
-		<div class="nav-wrapper">
-			<a href="/" class="brand-logo"><img width="310px" height="60px" style="margin-left:30px" src="image/icon.png"></a>
+<nav style="background:#555555">
+	<div class="nav-wrapper">
+		<a href="/" class="brand-logo"><img width="310px" height="60px" style="margin-left:30px" src="image/icon.png"></a>
+		<ul id="nav-mobile" class="right hide-on-med-and-down">
+			<li class="active"><a href="ana.html">Analysis</a></li>
+			<li class="active"><a href="javascript:void(0)" class="white-text" style="background:#5dbbdc"class="white-text">About</a></li>
+		</ul>
+
+	</div>
+</nav>
+
+
+<div class="row">
+		<div class="col s12 m9">
+			<div class="card about">
+				<div class="card-content">
+					<span class="card-title">About the project</span>
+					<img width="150px" height="150px" style="margin:20px" src="image/icon2.png">
+					<p><b>StartsVIS</b> is a d3-based system for visualizing types dependencies in STARTS.</p>
+					<p><b><a href="https://github.com/TestingResearchIllinois/starts">STARTS (STAtic Regression Test Selection)</a></b> is a robust tool for performing static RTS.</p>
+					<br>
+					<p><b>Demo:  </b><a href="#"> Demo address</a></p>
+					<p><b>GitHub:  </b><a href="https://github.com/ForestCold/StartsVis-Version2"> StartsVis-Version2</a></p>
+				</div>
+				<div class="card-action">
+					<img width="80px" height="80px" style="margin:5px; border: 1px white solid" src="image/lhf.jpg">
+					<p><b>Author:</b> Hanfei Lin</p>
+					<a href="http://www.hanfeilin.me">See my proliforio</a>
+				</div>
+			</div>
 		</div>
-	</nav>
-
-	<div class="index-img z-depth-2" style="background-image: url(image/background.jpg)"></div>
-
-		<a href="ana.html" class="waves-effect waves-light btn index-btn">Get Started</a>
+	</div>
 
 
-
+</div>
+</div>
+	</div>
 	<script type="text/javascript" src="js/vis.js"></script>
 	<script type="text/javascript" src="js/mainview.js"></script>
 	<script type="text/javascript" src="js/overview.js"></script>
@@ -45,6 +69,7 @@
 	<script type="text/javascript" src="js/driver.js"></script>
 	<br>
 	<br>
+	<footer class="central footer" style="color:#fff"> &copy; 2017 - Hanfei Lin - StartsVis</footer>
 </body>
 
 </html>
