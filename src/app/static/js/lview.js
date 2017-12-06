@@ -108,7 +108,8 @@ vis.lview = function() {
 
     Highcharts.chart('lview', {
         chart: {
-            type: 'column'
+            type: 'column',
+            backgroundColor: '#f9f9f9'
         },
         title: {
             text: 'modules'

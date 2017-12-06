@@ -214,6 +214,8 @@ vis.hview = function() {
 
         function brushed() {
 
+          selectedNodes = [];
+
           if (!d3.event.sourceEvent)
             return; // Only transition after input.
           if (!d3.event.selection)

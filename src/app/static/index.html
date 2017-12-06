@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Class Dependencies Graph</title>
+	<title>STARTVIS</title>
 	<link type="text/css" rel="stylesheet" href="lib/tipsy/tipsy.css" />
 	<link type="text/css" rel="stylesheet" href="lib/jquery-ui/jquery-ui.min.css" />
 	<link type="text/css" rel="stylesheet" href="lib/contextmenu/jquery.contextmenu.css" />
@@ -30,11 +30,62 @@
 		</div>
 	</nav>
 
-	<div class="index-img z-depth-2" style="background-image: url(image/background.jpg)"></div>
+	<div class="index-background blur"></div>
+	  <div class="section no-pad-bot" id="index-banner">
+	    <div>
+	      <br><br>
+	      <h1 class="header center" style="color:#f9f9f9; text-shadow:0.1em 0.1em 1em black">TRY <span style="color:#5dbbdc; text-shadow:0.1em 0.1em 1em #021d21">STARTSVIS</span> FOR YOUR PROJECT NOW!</h1>
+	      <div class="row center">
+	        <h5 class="header col s12 light" style="color:#f9f9f9;">Visualizing types dependencies in your projects, and the Regression Tests Selection strategy of STARTS.</h5>
+	      </div>
+	      <div class="row center">
+	        <a href="ana.html" id="download-button" class="btn-large waves-effect waves-light" style="background-color: #5dbbdc">Get Started</a>
+	      </div>
+	      <br><br>
+	    </div>
+	  </div>
 
-		<a href="ana.html" class="waves-effect waves-light btn index-btn">Get Started</a>
+		<div style="background:#f9f9f9">
+	<div class="section">
+		<div class="row">
+			<div class="col s12 m3">
+				<div class="icon-block">
+					<h2 class="center" style="color:#c6d7e2"><img class="index-icon z-depth-5" src="image/1.png"></h2>
+					<h5 class="center" style="color:#4b5e7c">STARTS Based</h5>
+					<p class="light center" style="color:#4b5e7c">STARTS is a static class-level regression test selection tool for Maven-based Java programs. STARTSVIS is a d3-based visualize and analysis system for STARTS. <a href="https://github.com/ForestCold/starts">See more about STARTS.</a></p>
+				</div>
+			</div>
 
+			<div class="col s12 m3">
+				<div class="icon-block">
+					<h2 class="center" style="color:#c6d7e2"><img class="index-icon z-depth-5" src="image/2.png"></h2>
+					<h5 class="center" style="color:#4b5e7c">Types Filter</h5>
+					<p class="light center" style="color:#4b5e7c">STARTSVIS help you classify types into classes, tests and libraries. Automatically filtering libraries that have nothing to do with Regression Test Selection. Also support user-guided types selecting process.</p>
+				</div>
+			</div>
 
+			<div class="col s12 m3">
+				<div class="icon-block">
+					<h2 class="center" style="color:#c6d7e2"><img class="index-icon z-depth-5" src="image/3.png"></h2>
+					<h5 class="center" style="color:#4b5e7c">Multi-module Supported</h5>
+					<p class="light center" style="color:#4b5e7c">STARTSVIS supports analyzing projects with multi modules. Automatically parsing the pom.xml file in the project's directory. Hash Map and Canvas are used to accelerate types analysis and visualization process.</p>
+				</div>
+			</div>
+
+			<div class="col s12 m3">
+				<div class="icon-block">
+					<h2 class="center" style="color:#c6d7e2"><img class="index-icon z-depth-5" src="image/4.png"></h2>
+					<h5 class="center" style="color:#4b5e7c">Dependencies Visualization</h5>
+					<p class="light center" style="color:#4b5e7c">STARTSVIS provides graph and tree components for types dependency visualization. Help users better understand about the Regression Test Selection strategy in STARTS.</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<br><br>
+</div>
+
+<footer class="center footer" style="color:#fff; margin:20px"> &copy; 2017 - Hanfei Lin - STARTSVIS</footer>
 
 	<script type="text/javascript" src="js/vis.js"></script>
 	<script type="text/javascript" src="js/mainview.js"></script>

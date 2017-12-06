@@ -75,6 +75,7 @@ function wire_views(){
 
 	//hview
 	hview.dispatch.on('select', function(module, selectedNode) {
+
 		d3.select("#mainview").selectAll("*").remove();
 
 		$.ajax({
