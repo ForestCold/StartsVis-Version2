@@ -6,7 +6,7 @@
 ## - Homepage
 [homepage](https://sleepy-woodland-26576.herokuapp.com/)
 
-![](https://raw.githubusercontent.com/ForestCold/Images/master/readme1.png)
+[![Watch the video](https://github.com/ForestCold/Images/blob/master/Screen%20Shot%202018-05-02%20at%203.59.07%20PM.png)](https://www.youtube.com/watch?v=SoTgzxIgNMQ)
 
 ## - Introduction
 
