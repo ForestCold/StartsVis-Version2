@@ -3,10 +3,12 @@
 
 # STARTSVIS
 
-## - Homepage
-[homepage](https://sleepy-woodland-26576.herokuapp.com/)
+STARTS is a static class-level regression test selection tool for Maven-based Java programs. STARTSVIS is a d3-based visualize and analysis system for STARTS. 
 
 [![Watch the video](https://github.com/ForestCold/Images/blob/master/Screen%20Shot%202018-05-02%20at%203.59.07%20PM.png)](https://www.youtube.com/watch?v=SoTgzxIgNMQ)
+
+## - Homepage
+[homepage](https://sleepy-woodland-26576.herokuapp.com/)
 
 ## - Introduction
 
